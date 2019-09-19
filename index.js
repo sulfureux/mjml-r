@@ -14,16 +14,23 @@ function isEmailTemplate(templatePath) {
   return '.mjml' === path.extname(templatePath);
 }
 
+let rootTemplate = "";
+
 function handleTemplateDir(templateDirPath, genDirPath, ignore = [], clear = false) {
   if (clear) {
     rimraf.sync(genDirPath);
   }
+
+  if (!rootTemplate) {
+    rootTemplate = templateDirPath;
+  }
+
   const files = fs.readdirSync(templateDirPath);
   const lengthFiles = files.length;
 
   for (let i = 0; i < lengthFiles; i++) {
     const name = files[i];
-    const willGenPath = templateDirPath.replace(`${templateDir}/`, "");
+    const willGenPath = templateDirPath.replace(`${rootTemplate}/`, "");
     const genPath = path.resolve(genDirPath, willGenPath);
     pathExistedOrCreate(genPath);
 
