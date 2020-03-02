@@ -4,7 +4,7 @@
   "version": "1.0.3",
   "main": "index.js",
   "author": {
-    "email": "pierreneter@gmail.com",
+    "email": "pierre@pierreneter.com",
     "name": "pierreneter",
     "url": "https://github.com/pierreneter"
   },
@@ -13,7 +13,7 @@
   "typings": "./mjml-r.d.ts",
   "bugs": {
     "url": "https://github.com/sulfureux/mjml-r/issues",
-    "email": "pierreneter@gmail.com"
+    "email": "pierre@pierreneter.com"
   },
   "keywords": [
     "mjml",
