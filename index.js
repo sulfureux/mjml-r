@@ -4,7 +4,7 @@ const path = require("path");
 const pathExistedOrCreate = require("path-existed-or-create");
 const mjml2html = require("mjml");
 const rimraf = require("rimraf");
-const htmlToText = require("html-to-text");
+const { htmlToText } = require("html-to-text");
 
 function isDir(dirPath) {
   return fs.lstatSync(dirPath).isDirectory();
@@ -72,8 +72,8 @@ function handleTemplateDir(
           genPath,
           `${path.basename(currentPath, ".mjml")}.txt`
         )}`,
-        htmlToText.fromString(html.html, {
-          wordwrap: 130
+        htmlToText(html.html, {
+          wordwrap: 130,
         })
       );
     }

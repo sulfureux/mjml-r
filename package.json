@@ -1,7 +1,7 @@
 {
   "name": "mjml-r",
   "repository": "git@github.com:sulfureux/mjml-r.git",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "author": {
     "email": "pierre@pierreneter.com",
@@ -23,9 +23,9 @@
     "generator"
   ],
   "dependencies": {
-    "html-to-text": "^5.1.1",
-    "mjml": "^4.5.0",
-    "path-existed-or-create": "^1.1.0",
-    "rimraf": "^3.0.0"
+    "html-to-text": "^7.1.1",
+    "mjml": "^4.9.3",
+    "path-existed-or-create": "^1.1.2",
+    "rimraf": "^3.0.2"
   }
 }
