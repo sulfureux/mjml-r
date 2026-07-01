@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "html-to-text": "^7.1.1",
-    "mjml": "^4.9.3",
+    "mjml": "^5.0.0",
     "path-existed-or-create": "^1.1.2",
     "rimraf": "^3.0.2"
   }
